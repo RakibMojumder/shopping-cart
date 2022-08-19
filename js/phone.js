@@ -1,20 +1,11 @@
 
-
-
-
-
 document.getElementById('phone-plus').addEventListener('click', function () {
-    const numberOfPhone = updatePhoneValue(true);
-
-    priceUpdatePhone(numberOfPhone);
+    updateValue(true, "phone-input-feild", 'phone-price', 1219);
     calculator()
-
 });
 
 document.getElementById('phone-minus').addEventListener('click', function () {
-    const numberOfPhone = updatePhoneValue(false);
+    updateValue(false, "phone-input-feild", 'phone-price', 1219);
+    calculator()
+});
 
-    priceUpdatePhone(numberOfPhone);
-
-    calculator();
-})

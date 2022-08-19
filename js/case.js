@@ -1,18 +1,11 @@
 
-
 document.getElementById('case-plus').addEventListener('click', function () {
-    const numberOfCase = updateCaseValue(true);
-
-    priceUpdateCase(numberOfCase);
-
-    calculator()
+    updateValue(true, "case-input-feild", 'case-price', 59);
+    calculator();
 });
 
 document.getElementById('case-minus').addEventListener('click', function () {
-    const numberOfCase = updateCaseValue(false);
-
-    priceUpdateCase(numberOfCase);
-
+    updateValue(false, "case-input-feild", 'case-price', 59);
     calculator()
-
 });
+
